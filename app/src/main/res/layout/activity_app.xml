@@ -2,4 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/buttonRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="34dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/buttonStopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonRecord"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_toEndOf="@+id/buttonRecord"
+        android:layout_toRightOf="@+id/buttonRecord"
+        android:text="Button" />
 </RelativeLayout>
