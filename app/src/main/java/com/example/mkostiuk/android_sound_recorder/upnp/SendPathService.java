@@ -32,8 +32,8 @@ public class SendPathService {
     @UpnpStateVariable(name = "Path")
     private String path = "";
 
-    @UpnpAction(name = "SendPath")
-    public void sendPath(@UpnpInputArgument(name = "NewPathValue") String p) {
+    @UpnpAction(name = "SetPath")
+    public void sendPath(@UpnpInputArgument(name = "Path") String p) {
         path = p;
 
         getPropertyChangeSupport().firePropertyChange("Path", "", path);

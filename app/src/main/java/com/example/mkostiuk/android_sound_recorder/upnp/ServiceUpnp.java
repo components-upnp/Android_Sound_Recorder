@@ -39,6 +39,7 @@ public class ServiceUpnp {
 
                     } catch (Exception ex) {
                         System.err.println("Creating Android remote controller device failed !!!");
+                        ex.printStackTrace();
                         return;
                     }
                 }
@@ -67,5 +68,9 @@ public class ServiceUpnp {
 
     public ServiceConnection getService() {
         return serviceConnection;
+    }
+
+    public UDN getUdnRecorder() {
+        return udnRecorder;
     }
 }
